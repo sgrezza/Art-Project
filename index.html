@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>&#128518;&#128169;</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="scripts/anime.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+    </head>
+    <body>
+        <div style="z-index: 5; position: absolute;">
+                <button onclick="changeBGtoBlue()" >blue</button>
+                <button onclick="changeBGtoRed()" >red</button>
+        </div>
+   
+   
+   <div id="cssSelector">
+            <div class="line">
+              <div class="square el"></div>
+            </div>
+          </div>
+          <div id="cssSelector2">
+            <div class="line2">
+              <div class="square el2"></div>
+            </div>
+          </div>
+    </body>
+    <script type="text/javascript">
+         anime({
+  targets: '#cssSelector .el',
+  translateX: 250,
+  backgroundColor: '#333333',
+  scale: 50,
+  duration: 9000
+});
+function changeBGtoBlue() {
+    anime({
+        targets: '#cssSelector2 .el2',
+     
+        backgroundColor: '#5555aa',
+        scale: 50,
+        duration: 9000
+    })
+}
+function changeBGtoRed() {
+    anime({
+        targets: '#cssSelector .el',
+     
+        backgroundColor: '#ff0000',
+        scale: 50,
+        duration: 9000
+    })
+}
+    </script>
+</html>
