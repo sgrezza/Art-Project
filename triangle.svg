@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.72 151.32">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #eee;
+            }
+        </style>
+    </defs>
+    <title>Asset 2</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_2-2" data-name="Layer 2">
+            <polygon class="cls-1" points="2.6 149.82 87.36 3 172.13 149.82 2.6 149.82" />
+            <path d="M87.36,6l82.17,142.32H5.2L87.36,6m0-6L0,151.32H174.72L87.36,0Z" />
+
+        </g>
+    </g>
+    <defs>
+    <linearGradient id="skyGradient" x1="100%" y1="100%">
+          <stop offset="0%" stop-color="lightblue" stop-opacity=".5">
+            <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="lightblue" stop-opacity=".5">
+            <animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite" />
+            <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+        </defs>
+</svg>

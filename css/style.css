@@ -1,5 +1,5 @@
 body{
-    background: #eeeeee;
+
 }
 .square{
     position: relative;
@@ -14,4 +14,8 @@ body{
 }
 #cssSelector2{
     top: 300px;
+}
+.svg{
+    max-width: 150px;
+    max-height: 150px;
 }
