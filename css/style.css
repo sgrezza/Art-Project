@@ -63,4 +63,12 @@
 }
 .card-content, .project{
     background: rgba(255, 255, 255, 0.3);
+    width: 196px;
+}
+.card:hover{
+    transform: translate(0px, -1px);
+    box-shadow: 0 0px -2px black;
+}
+.card:active, .card:focus{
+    transform: translate(0px 2px);
 }
