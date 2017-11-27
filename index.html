@@ -11,16 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="scripts/anime.min.js"></script>
         <link rel="stylesheet" href="https://use.typekit.net/qvp4ltp.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" type="text/css" href="css/bulma.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body class="aesthetic">
-       
+    <body class="aesthetic" id="background">
 <div class="hero">
            <div class="hero-body has-text-centered  white-font">
-               <h1 class="title is-1 din-bold white-font">Ctrl + Art + Delete</h1>
+               <h1 class="title is-1 din-bold white-font bounce">Ctrl + Art + Delete</h1>
                <p class="subtitle is-3 white-font din-regular-italic">Artworks by a C.I.S major trying to be creative.</p>
-               <p class="subtitle is-4 yellow-font din-light-italic">by Spencer Allegrezza</p>
+               <p class="subtitle is-4 yellow-font din-regular">by Spencer Allegrezza</p>
 
            </div>
        </div>
@@ -28,15 +28,15 @@
        <div class="section">
             <nav class="level">
                     <div class="level-item ">
-                            <a class="card" onclick="showRoom();">
+                            <a class=" card " onclick="showRoom();">
                                     <div class="card-image">
                                       <figure class="image is-4by3">
                                         <img src="images/wall4.jpg" alt="Placeholder image">
                                       </figure>
                                     </div>
                                     <div class="card-content has-text-left">
-                                     <h1 class="title white-font is-spaced din-regular">Project 2</h1>
-                                     <p class="subtitle din-regular">The Room Project</p>
+                                     <h1 class="title white-font is-spaced din-regular-italic">Project 2</h1>
+                                     <p class="subtitle tk-body">The Room Project</p>
                                     </div>
                                 </a>
                     </div>
@@ -48,8 +48,8 @@
                                       </figure>
                                     </div>
                                     <div class="card-content has-text-left">
-                                     <h1 class="title white-font is-spaced din-regular">Project 3</h1>
-                                     <p class="subtitle din-regular">The Book Project</p>
+                                     <h1 class="title white-font is-spaced din-regular-italic">Project 3</h1>
+                                     <p class="subtitle tk-body">The Book Project</p>
                                     </div>
                                 </a>
                     </div>
@@ -61,8 +61,8 @@
                                       </figure>
                                     </div>
                                     <div class="card-content has-text-left">
-                                     <h1 class="title white-font is-spaced din-regular">Project 6</h1>
-                                     <p class="subtitle din-regular">The Story Project</p>
+                                     <h1 class="title white-font is-spaced din-regular-italic">Project 6</h1>
+                                     <p class="subtitle tk-body">The Story Project</p>
                                     </div>
                                 </a>
                     </div>
@@ -74,20 +74,27 @@
                                       </figure>
                                     </div>
                                     <div class="card-content ">
-                                     <h1 class="title white-font is-spaced din-regular">Project 7</h1>
-                                     <p class="subtitle din-regular">The Gif Project</p>
+                                     <h1 class="title white-font is-spaced din-regular-italic">Project 7</h1>
+                                     <p class="subtitle tk-body">The Gif Project</p>
                                     </div>
                                 </a>
                       
                     </div>
                   </nav>
+                  <div class="level">
+                      <div class="level-item">
+                          <a class="button is-outlined aesthetic-alt" id="button" onclick="whiteStyle()">Toggle Style</a>
+                          
+                      </div>
+                      
+                  </div>
                   <div class="modal" id="room-modal">
                     <div class="modal-background"></div>
                     <div class="modal-content">
                         <section class="section">
                             <div class="hero is-dark">
-                                <div class="hero-body">
-                                    <h1 class="title white-font din-regular-italic">Project 2</h1>
+                                <div class="hero-body animated fadeIn">
+                                    <h1 class="title white-font din-regular-italic ">Project 2</h1>
                                     <p class="subtitle yellow-font din-light-italic">The Room Project</p>
                                     <h1 class="subtitle yellow-font din-regular">Kickstart my art</h1>
                              
@@ -148,7 +155,7 @@
                         <div class="modal-content">
                             <section class="section">
                                 <div class="hero is-dark">
-                                    <div class="hero-body">
+                                    <div class="hero-body animated fadeIn">
                                         <h1 class="title white-font din-regular-italic">Project 3</h1>
                                         <p class="subtitle yellow-font din-light-italic">The Book Project</p>
                                         <h1 class="subtitle yellow-font din-regular">"The best book I've ever read" - me</h1>
@@ -211,7 +218,7 @@
                             <div class="modal-content">
                                 <section class="section">
                                     <div class="hero is-dark">
-                                        <div class="hero-body">
+                                        <div class="hero-body animated fadeIn">
                                             <h1 class="title white-font din-regular-italic">Project 6</h1>
                                             <p class="subtitle yellow-font din-light-italic">The Story Project</p>
                                             <h1 class="subtitle yellow-font din-regular">The story's bad, but the cast is good</h1>
@@ -263,7 +270,7 @@
                                 <div class="modal-content">
                                     <section class="section">
                                         <div class="hero is-dark">
-                                            <div class="hero-body">
+                                            <div class="hero-body animated fadeIn">
                                                 <h1 class="title white-font din-regular-italic">Project 7</h1>
                                                 <p class="subtitle yellow-font din-light-italic">The Gif Project</p>
                                                 <h1 class="subtitle yellow-font din-regular">His name is Chester.</h1>
@@ -288,24 +295,7 @@
     </body>
     <script type="text/javascript">
   
-function changeBGtoBlue() {
-    anime({
-        targets: '#cssSelector2 .el2',
-     
-        backgroundColor: '#5555aa',
-        scale: 50,
-        duration: 9000
-    })
-}
-function changeBGtoRed() {
-    anime({
-        targets: '#cssSelector .el',
-     
-        backgroundColor: '#ff0000',
-        scale: 50,
-        duration: 9000
-    })
-}
+
 function showRoom(){
     e = document.getElementById('room-modal');
     e.classList.add('is-active');
@@ -338,5 +328,35 @@ function hideDoggo(){
     e = document.getElementById('doggo-modal');
     e.classList.remove('is-active');
 }
+var f = document.getElementsByClassName('white-font'),
+    back = document.getElementById('background'),
+    button = document.getElementById('button');
+var whiteStyleApplied = false;
+function whiteStyle(){
+    if (whiteStyleApplied == false){
+        for (var i = 0; i<f.length; i++){
+        f[i].classList.add('white-font-alt');
+    }
+    back.classList.add('aesthetic-alt');
+    whiteStyleApplied = true;
+    button.classList.remove('aesthetic-alt');
+    button.classList.add('aesthetic');
+    }
+    else{
+        for (var i = 0; i<f.length; i++){
+        f[i].classList.remove('white-font-alt');
+    }
+    back.classList.remove('aesthetic-alt');
+    button.classList.remove('aesthetic');
+    whiteStyleApplied = false;
+    }
+       
+    
+   
+}
+function aestheticStyle(){
+    
+}
+
     </script>
 </html>
