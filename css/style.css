@@ -48,7 +48,7 @@
     text-shadow: 0 1px 2px rgba(0,0, 0, 0.20);
 }
 .yellow-font{
-    color: rgb(211, 189, 78);
+    color: rgb(211, 189, 78) !important;
     text-shadow: 0 1px 2px rgba(0,0, 0, 0.20);    
 }
 .white-font.subtitle{
