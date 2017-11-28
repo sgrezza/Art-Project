@@ -71,9 +71,9 @@
 }
 .card-content, .project{
     background: rgba(255, 255, 255, 0.3);
-    width: 240px;
+    /* width: 240px; */
 }
-.card:hover, .level-item:hover{
+.card:hover, .column:hover{
     /* transform: translate(0px, -1px);
     box-shadow: 0 0px -2px black; */
     animation-name: shake;
@@ -83,9 +83,7 @@
 a:active, .card-image:active{
     animation-name: pulse;
 }
-html, body{
-    height: 100%;
-}
+
 .delayed{
     animation-delay: 500ms;
 }
