@@ -23,14 +23,14 @@
 
            </div>
        </div>
-        </div>
+       
        <div class="section">
            <div style="text-align:center;">
-                <p class="subtitle is-3 white-font din-regular-italic">Artworks by a C.I.S major trying to be creative.</p>
-                <p class="title is-4 yellow-font din-regular">by Spencer Allegrezza</p>
+                <p class="subtitle is-2 white-font din-regular-italic">Artworks by Spencer Allegrezza,<br> a C.I.S major who tried to be creative.</p>
+                <p class="title is-3 yellow-font din-regular"></p>
                 <br>
            </div>
-            <nav class="columns">
+            <nav class="columns is-variable is-8">
                     <div class="column is-3 is-offset-3 animated">
                             <a class=" card " onclick="showRoom();">
                                     <div class="card-image">
@@ -39,8 +39,7 @@
                                       </figure>
                                     </div>
                                     <div class="card-content has-text-left">
-                                     <h1 class="title white-font is-spaced din-regular-italic">Project 2</h1>
-                                     <p class="subtitle tk-body">The Room Project</p>
+                                     <h1 class="title white-font is-spaced din-regular-italic">The Room Project</h1>
                                     </div>
                                 </a>
                     </div>
@@ -52,8 +51,9 @@
                                       </figure>
                                     </div>
                                     <div class="card-content has-text-left">
-                                     <h1 class="title white-font is-spaced din-regular-italic">Project 3</h1>
-                                     <p class="subtitle tk-body">The Book Project</p>
+                                     <h1 class="title white-font is-spaced din-regular-italic">The Book Project</h1>
+                                     <p style="margin-top: -30px; font-size: 16px;" class="tk-body yellow-font">Fan Favorite</p>
+                                     
                                     </div>
                                 </a>
                     </div>
@@ -67,8 +67,8 @@
                                               </figure>
                                             </div>
                                             <div class="card-content has-text-left">
-                                             <h1 class="title white-font is-spaced din-regular-italic">Project 6</h1>
-                                             <p class="subtitle tk-body">The Story Project</p>
+                                             <h1 class="title white-font is-spaced din-regular-italic">The Story Project</h1>
+                                             
                                             </div>
                                         </a>
                             </div>
@@ -80,8 +80,8 @@
                                               </figure>
                                             </div>
                                             <div class="card-content ">
-                                             <h1 class="title white-font is-spaced din-regular-italic">Project 7</h1>
-                                             <p class="subtitle tk-body">The Gif Project</p>
+                                             <h1 class="title white-font is-spaced din-regular-italic">The Gif Project</h1>
+                                             
                                             </div>
                                         </a>
                               
@@ -96,8 +96,22 @@
                       </div>
                       
                   </div>
+    
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 1090px;">This is the end of the website.</h1>
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 2300px;">There's no more website here.</h1>
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 2500px;">This is the end, please stop.</h1>
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 3200px;">I will call the police. My uncle's cousin works at NASA, you'll go to prison.</h1>
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 4100px;">IF I SHOW YOU A YOUTUBE VIDEO, WILL YOU STOP?</h1>
+                          <a class="tk-body button" style="position: absolute; top: 4600px;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">FINE, HERE</a>
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 6000px;">Yeah, did you like that? You just got rick rolled in 2k17.</h1>
+                          <h1 class="tk-body subtitle" style="position: absolute; top: 6800px;">I'm out of cool and witty things to say here, sorry.</h1>
+                          
+                          
+                          
+                          
+                          
                   <div class="modal" id="room-modal">
-                    <div class="modal-background"></div>
+                    <div class="modal-background" onclick="hideRoom();"></div>
                     <div class="modal-content">
                         <section class="section">
                             <div class="hero is-dark">
@@ -155,11 +169,11 @@
                             </div>
                         </section>
                     </div>
-                    <div class="modal-close" onclick="hideRoom();"></div>
+                    <div class="modal-close" ></div>
 
                   </div>
                   <div class="modal" id="book-modal">
-                        <div class="modal-background"></div>
+                        <div class="modal-background"  onclick="hideBook();"></div>
                         <div class="modal-content">
                             <section class="section">
                                 <div class="hero is-dark">
@@ -187,7 +201,7 @@
                                              <figure class="image">
                                                     <a href="images/book/page1.jpg" target="blank_"><img src="images/book/page1.jpg"></a>  
                                                  </figure>
-                                                 <h1 class="subtitle white-font tk-body">Page 1 and 2.</h1>
+                                                 <h1 class="subtitle white-font tk-body">Page 1 and 2. The fonts used throughout this book are Justus Pro and DIN 2014</h1>
                                                  
                                                  <br>
                                             <figure class="image">
@@ -217,12 +231,12 @@
                                 </div>
                             </section>
                         </div>
-                        <div class="modal-close" onclick="hideBook();"></div>
+                        <div class="modal-close"></div>
     
                       </div>
                      
                     <div class="modal" id="story-modal">
-                            <div class="modal-background"></div>
+                            <div class="modal-background" onclick="hideStory();"></div>
                             <div class="modal-content">
                                 <section class="section">
                                     <div class="hero is-dark">
@@ -270,11 +284,11 @@
                                     </div>
                                 </section>
                             </div>
-                            <div class="modal-close" onclick="hideStory();"></div>
+                            <div class="modal-close" ></div>
         
                           </div>
                           <div class="modal" id="doggo-modal">
-                                <div class="modal-background"></div>
+                                <div class="modal-background" onclick="hideDoggo();"></div>
                                 <div class="modal-content">
                                     <section class="section">
                                         <div class="hero is-dark">
@@ -296,7 +310,7 @@
                                         </div>
                                     </section>
                                 </div>
-                                <div class="modal-close" onclick="hideDoggo();"></div>
+                                <div class="modal-close" ></div>
             
                               </div>
           
